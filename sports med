@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peak Sports Med</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111827;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 25px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #374151;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .schedule-form input, 
+    .schedule-form textarea, 
+    .schedule-form button {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    .schedule-form button {
+      background-color: #1e3a8a;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .schedule-form button:hover {
+      background-color: #374151;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Peak Sports Med</h1>
+    <p>Your trusted partner in sports health and performance.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m [Your Name], a certified sports medicine professional dedicated to helping athletes recover, prevent injuries, and enhance performance. With years of experience in treating athletes at all levels, I combine modern techniques with personalized care to ensure you reach your peak potential.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>We provide a full range of sports medicine services including:</p>
+    <ul>
+      <li>Injury Assessment & Rehabilitation</li>
+      <li>Performance Training & Conditioning</li>
+      <li>Preventative Care & Education</li>
+      <li>Sports Therapy & Recovery</li>
+    </ul>
+  </section>
+
+  <section id="schedule">
+    <h2>Schedule an Appointment</h2>
+    <form class="schedule-form" action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" rows="4" placeholder="Preferred Date & Time / Message"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@peaksportsmed.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Athlete Ave, City, State</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Peak Sports Med. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
